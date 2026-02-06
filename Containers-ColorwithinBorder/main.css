@@ -1,0 +1,47 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+}
+
+/* Container */
+.container {
+  width: 92%;
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 2px solid red; /* demo */
+}
+
+/* Header */
+.header-container {
+  background-color: chocolate;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hero */
+.hero {
+  padding: 40px 0;
+}
+
+.hero-container {
+  background-color: gray;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
