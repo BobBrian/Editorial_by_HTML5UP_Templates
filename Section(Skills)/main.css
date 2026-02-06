@@ -1,0 +1,63 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ---------- Section header ---------- */
+header.major {
+  margin-bottom: 40px;
+}
+
+header.major h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 3px solid red;
+  display: inline-block;
+}
+
+/* ---------- Features grid ---------- */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* ---------- Article layout ---------- */
+.features article {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* ---------- Rotated square (diamond) icons ---------- */
+.features .icon {
+  width: 52px;
+  height: 52px;
+  border: 2px solid grey;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  margin-right: 24px;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+/* ---------- Content spacing ---------- */
+.features .content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.features .content p {
+  margin: 0;
+  line-height: 1.6;
+}
