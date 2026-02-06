@@ -1,0 +1,97 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Container ---------- */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ---------- Header ---------- */
+header.major {
+  margin-bottom: 40px;
+}
+
+header.major h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ---------- Posts grid ---------- */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ---------- Article ---------- */
+.posts article {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Remove right border on last column */
+.posts article:nth-child(2n) {
+  border-right: none;
+}
+
+/* ---------- Image wrapper (reduced size) ---------- */
+.posts .image {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* ---------- Image ---------- */
+.posts .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ---------- Text ---------- */
+.posts article h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.posts article p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---------- Actions ---------- */
+.actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actions li {
+  display: inline-block;
+}
+
+.actions .button {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid red;
+  background: white;
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.actions .button:hover {
+  background: #fff3e6;
+}
