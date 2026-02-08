@@ -1,0 +1,74 @@
+/* Shared container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px; /* equal left + right */
+}
+
+/* Sticky navbar */
+#navbar {
+  background-color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+/* Navbar inner spacing */
+#navbar .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+/* Logo */
+#navbar #logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Hover */
+#navbar a:hover {
+  background-color: #ddd;
+}
+
+/* Active */
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Right links */
+#navbar-right {
+  float: right;
+}
+
+/* Page content */
+.content {
+  margin-top: 120px; /* prevents overlap with fixed navbar */
+}
+
+/* Responsive */
+@media (max-width: 580px) {
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #navbar-right {
+    float: none;
+  }
+}
